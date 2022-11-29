@@ -1,1 +1,1 @@
-# mate_academy_first
+# mate_academy_second

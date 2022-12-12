@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Arrays;
 
-import static org.example.function.booleanExpression;
+import static org.example.function.*;
 
 /**
  * Hello world!
@@ -92,6 +92,14 @@ public class App {
         System.out.println(booleanExpression(true, false, true, false));
         System.out.println(booleanExpression(false, false, true, false));
         System.out.println(booleanExpression(false, false, false, false));
+
+        getDoubledNumber(4);
+        getDoubledNumber(10);
+
+        System.out.println(iToBi(3));
+        System.out.println(iToBi(5));
+        System.out.println(iToBi(2));
+        System.out.println(0);
 
     }
 }

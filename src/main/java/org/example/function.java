@@ -2,7 +2,7 @@ package org.example;
 
 
 public class function {
-
+// Integer to Binary translation
     public static String iToBi(int value) {
         StringBuilder intNumber = new StringBuilder();
         do {
@@ -11,24 +11,26 @@ public class function {
         } while (value > 0);
         return intNumber.reverse().toString();
     }
-
+// Умножалка на два
     public static int getDoubledNumber(int number) {
         return number << 1;
     }
 
+//
     public static byte bToB(boolean x) {
-        //      byte z = (byte) 1 ? x : 0;
+        byte bi ;
+
+     //      byte z = (byte) 1 ? x : 0;
         //      return 1 ? x : 0;
         return 0;
     }
 
+
     public static boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        //write code below this line
 
-        System.out.println(a + " " + b + " " + c + " " + d);
-        //       System.out.println(bToB(a) + " " + booleanExpression(b) + " " + booleanExpression(c) + " " + booleanExpression(d));
-
-        return false;
+        boolean rez1 =  ( a ^ b && c ^ d ) || (a ^ c || b ^ d );
+        boolean rez = !(a ^ b ^ c ^ d) & !(a & b & c & d) & !(!a & !b & !c & !d);
+        return rez;
         //write code above this line
     }
 }

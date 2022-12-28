@@ -1,6 +1,30 @@
 package org.example;
 
+
+import java.util.Arrays;
+
 class Printer {
+    public String print(String message) {
+        return message;
+    }
+
+    public String print(int intMessage) {
+        return String.valueOf(intMessage);
+    }
+
+    public String print(double doubleMessage) {
+        return String.valueOf(doubleMessage);
+    }
+
+    public String print(String message, int intMessage) {
+        return message + " and " + intMessage;
+    }
+
+    public String print(String[] messages) {
+     //   messages.toString();
+        return Arrays.toString(messages);
+    }
+
     public static char[] removeLetter(String message) {
         char[] charMessage = new char[0];
         if (message != null) {

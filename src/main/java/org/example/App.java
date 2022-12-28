@@ -10,6 +10,14 @@ import static org.example.function.*;
 public class App {
 
     public static void main(String[] args) {
+        booleanExpression(true, true, true, false);
+        booleanExpression(true, true, false, false);
+        booleanExpression(true, true, true, true);
+        booleanExpression(false, false, false, false);
+        booleanExpression(true, false, true, false);
+        booleanExpression(true, false, true, false);
+        booleanExpression(false, false, true, true);
+
 
         System.out.println("Hello World!");
         MatrixDiagonal matrixDiagonal = new MatrixDiagonal();
@@ -27,6 +35,8 @@ public class App {
         System.out.println(" match rez " + matchResult.matchResult(2, 3, 1, 4));
 
         Printer pr = new Printer();
+        String[] messages = {"I", "print", "words", "from", "an", "array"};
+        System.out.println(pr.print(messages));
         int iii = 11;
         pr.printer(iii);
         UserAccount uu = new UserAccount();

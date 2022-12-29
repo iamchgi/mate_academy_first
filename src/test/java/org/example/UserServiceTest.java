@@ -15,7 +15,7 @@ public class UserServiceTest {
     "test@gmail.com:2", "bob@mail.com:141986"};
   private static final String[] EMPTY_ARRAY = {};
   private static final String[] singleElementArray = {"carl@mail.com:30"};
-  private static final String EXCEPTION_CLASS = "UserNotFoundException";
+  private static final String EXCEPTION_CLASS = "org.example.UserNotFoundException";
   private static UserService userService;
 
   @BeforeClass

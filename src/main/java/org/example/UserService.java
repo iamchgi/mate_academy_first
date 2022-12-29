@@ -10,11 +10,6 @@ public class UserService {
                 return Integer.valueOf(record[1]);
             }
         }
-        try {
             throw new UserNotFoundException("User with given email doesn't exist");
-        } catch (UserNotFoundException e) {
-            e.printStackTrace();
-        }
-        return 0;
     }
 }
